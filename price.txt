@@ -1,0 +1,78 @@
+package restaurant;
+
+
+public class price {
+public int nrx1;
+public int nrx2;
+public int nrx3;
+public int nrx4;
+public int nrx5;
+public int nrx6;
+public int nrx7;
+public int nrx8;
+
+    public int getNrx1() {
+        return nrx1;
+    }
+
+    public int getNrx2() {
+        return nrx2;
+    }
+
+    public int getNrx3() {
+        return nrx3;
+    }
+
+    public int getNrx4() {
+        return nrx4;
+    }
+
+    public int getNrx5() {
+        return nrx5;
+    }
+
+    public int getNrx6() {
+        return nrx6;
+    }
+
+    public int getNrx7() {
+        return nrx7;
+    }
+
+    public int getNrx8() {
+        return nrx8;
+    }
+
+    public void setNrx1(int nrx1) {
+        this.nrx1 = nrx1;
+    }
+
+    public void setNrx2(int nrx2) {
+        this.nrx2 = nrx2;
+    }
+
+    public void setNrx3(int nrx3) {
+        this.nrx3 = nrx3;
+    }
+
+    public void setNrx4(int nrx4) {
+        this.nrx4 = nrx4;
+    }
+
+    public void setNrx5(int nrx5) {
+        this.nrx5 = nrx5;
+    }
+
+    public void setNrx6(int nrx6) {
+        this.nrx6 = nrx6;
+    }
+
+    public void setNrx7(int nrx7) {
+        this.nrx7 = nrx7;
+    }
+
+    public void setNrx8(int nrx8) {
+        this.nrx8 = nrx8;
+    }
+
+}

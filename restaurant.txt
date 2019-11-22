@@ -1,0 +1,40 @@
+
+package restaurant;
+
+
+import restaurant.menu1.drink;
+import restaurant.menu1.food;
+
+
+    
+
+public class Restaurant {
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to our restaurant");
+        System.out.println("menu");
+        menu a=new menu();
+        System.out.println(a.food+" : ");
+price price=new price();
+price.setNrx1(2000);
+price.setNrx2(7000);
+price.setNrx3(7000);
+price.setNrx4(12000);
+price.setNrx5(250);
+price.setNrx6(250);
+price.setNrx7(500);
+price.setNrx8(500);
+food food=new food();
+food.food1();
+        System.out.println(price.nrx1+"  "+price.nrx2+"    "+price.nrx3+"    "+price.nrx4);
+drink drink=new drink();
+        System.out.println(a.drink+" : ");
+drink.drink();
+ System.out.println(price.nrx5+"  "+price.nrx6+" "+price.nrx7+"   "+price.nrx8);
+
+ 
+
+        
+    }
+    
+}

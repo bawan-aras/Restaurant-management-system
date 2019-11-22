@@ -1,0 +1,19 @@
+
+package restaurant;
+interface menu1 {
+ class food implements menu1{
+     void food1(){
+         System.out.println("sada  brzhaw  kullaw  qozi ");
+ }
+ }
+ class drink implements menu1{
+     void drink(){
+         System.out.println("aw   cha sardi mastaw");
+     }
+ }
+}
+
+public class menu {
+    String food="food";
+    String drink="drink";
+}
