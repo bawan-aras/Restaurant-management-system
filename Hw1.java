@@ -16,10 +16,10 @@ public class Hw1 {
             }
             int a = JOptionPane.showConfirmDialog(null, "do you want do another?", "select option", JOptionPane.YES_NO_CANCEL_OPTION);
 if(a==JOptionPane.NO_OPTION){
-    System.exit(a);
+    System.exit(0);
 }
 else if(a==JOptionPane.CANCEL_OPTION){
-    System.exit(a);
+    System.exit(0);
 }
         }
 
