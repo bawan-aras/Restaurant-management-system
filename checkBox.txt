@@ -1,0 +1,67 @@
+package javaapplication12;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public abstract class checkBox extends JPanel implements ActionListener{
+  JCheckBox chicken;
+    JCheckBox meat;
+    JCheckBox pizza;
+    JCheckBox burger;
+    JCheckBox fish;
+    JButton goButton = new JButton("Order");
+
+    public checkBox() {
+        chicken = new JCheckBox("chicken");
+        chicken.setSelected(false);
+          meat = new JCheckBox("meat");
+        meat.setSelected(false);
+          pizza= new JCheckBox("pizza");
+        pizza.setSelected(false);
+    burger= new JCheckBox("burger");
+        burger.setSelected(false);
+         fish= new JCheckBox("fish");
+        fish.setSelected(false);
+    goButton.addActionListener(this);
+        setLayout(new GridLayout());
+        add(chicken);
+        add(meat);
+        add(pizza);
+        add(burger);
+        add(fish);
+    }
+    public static void main(String[] args) {
+  JFrame frame=new JFrame("checkBox");
+  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     frame.getContentPane().add(new checkBox() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+          throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      }
+  });
+     frame.pack();
+     frame.setVisible(true);
+  
+    }
+    
+
+
+  @Override
+  public void actionPerformed(ActionEvent e){
+if (chicken.isSelected()){
+    System.out.println("checking = true");
+}
+else {
+    System.out.println("false");
+}
+System.exit(0);
+}
+}

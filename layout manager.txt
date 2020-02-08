@@ -1,0 +1,25 @@
+
+package layoutmanager;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+
+public class LayoutManager extends JFrame{
+
+      JButton b1=new JButton("Menu");
+public LayoutManager(){
+    setTitle("WELCOME");
+    Container pane = getContentPane();
+    pane.setLayout(new BorderLayout());
+    setBounds(0,0,100,50);
+    pane.add(b1,"Center");
+}
+    public static void main(String[] args) {
+                  LayoutManager a=new LayoutManager();
+  a.setVisible(true);
+    }
+    
+}

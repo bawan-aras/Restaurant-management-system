@@ -1,0 +1,52 @@
+import java.awt.FlowLayout;
+ 
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+ 
+public class TextField extends JFrame {
+ 
+    private static final long serialVersionUID = 1L;
+ 
+    public TextField() {
+ 
+        
+        this.getContentPane().setLayout(new FlowLayout());
+ 
+        JTextField field1 = new JTextField();
+        field1.setText("     ");
+ 
+     
+        add(field1);
+        
+ 
+    }
+ 
+    private static void createAndShowGUI() {
+ 
+
+ 
+  JFrame frame = new TextField();
+ 
+  frame.pack();
+ 
+  frame.setVisible(true);
+ 
+  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ 
+    }
+ 
+    public static void main(String[] args) {
+ 
+
+  javax.swing.SwingUtilities.invokeLater(new Runnable() {
+ 
+public void run() {
+ 
+    createAndShowGUI(); 
+ 
+}
+ 
+  });
+    }
+ 
+}
